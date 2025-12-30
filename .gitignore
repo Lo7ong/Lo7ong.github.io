@@ -1,0 +1,28 @@
+# === Node / pnpm ===
+node_modules/
+pnpm-debug.log*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-store/
+
+# === VitePress build output ===
+docs/.vitepress/dist/
+
+# VitePress cache (dev/build)
+docs/.vitepress/cache/
+
+# === Vite/Vue/TS caches ===
+.vite/
+*.tsbuildinfo
+
+# === OS / Editor ===
+.vscode/
+
+# === Env / Secrets ===
+.env
+.env.*
+!.env.example
+
+# === Coverage / test ===
+coverage/
