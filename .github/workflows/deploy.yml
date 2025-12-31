@@ -37,10 +37,13 @@ jobs:
         uses: actions/setup-node@v6
         with:
           node-version: 22.21.1
-          cache: pnpm
+          # cache: pnpm
       - name: Enable Corepack (pnpm)
         run: corepack enable
-
+      - name: Setup pnpm cache
+        uses: actions/setup-node@v6
+        with:
+            cache: pnpm
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
