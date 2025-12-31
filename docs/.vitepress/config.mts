@@ -2,6 +2,9 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  // 如果是项目站点（https://lo7ong.github.io/<repo>/），这里要改成 '/<repo>/'
+  // 用户站点（lo7ong.github.io）就保持 '/'
+  base: '/',
   title: "Lo7ong Docs Hub",
   description: "Markdown Site",
   themeConfig: {
